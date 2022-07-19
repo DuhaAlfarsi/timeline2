@@ -53,6 +53,23 @@ section::before {
   section {
     width: 80%;
   }
+  section ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section::before {
+    content: "";
+    position: absolute;
+    height: 278px;
+    width: 2px;
+    top: 8px;
+    bottom: 0;
+    left: 20px;
+    z-index: -1;
+    background: black;
+    transform: rotate(0deg);
+  }
+  
 
   @media only screen and (max-width: 992px) {
     body {
